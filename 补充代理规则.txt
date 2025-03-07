@@ -1,0 +1,15 @@
+# 海棠
+DOMAIN-KEYWORD,ebook.longmabook
+# Toggl
+DOMAIN-SUFFIX,track.toggl.com
+# 书香门第
+DOMAIN-SUFFIX,txtnovel.vip
+# 模拟人生相关
+DOMAIN-SUFFIX,loverslab.com
+DOMAIN-SUFFIX,orchardsims.com
+DOMAIN-SUFFIX,deaderpool-mccc.com
+DOMAIN-KEYWORD,modthesims
+# ptt
+DOMAIN-SUFFIX,pttweb.cc
+七志宇
+DOMAIN-SUFFIX,qichiyu.com
