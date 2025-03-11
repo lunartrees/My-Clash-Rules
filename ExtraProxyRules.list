@@ -15,3 +15,5 @@ DOMAIN-SUFFIX,pttweb.cc
 DOMAIN-SUFFIX,qichiyu.com
 # nodeseek
 DOMAIN-SUFFIX,nodeseek.com
+# OAuth验证API
+DOMAIN-SUFFIX,nn.ci
