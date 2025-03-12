@@ -17,3 +17,5 @@ DOMAIN-SUFFIX,qichiyu.com
 DOMAIN-SUFFIX,nodeseek.com
 # OAuth验证API
 DOMAIN-SUFFIX,nn.ci
+# 油猴脚本
+DOMAIN-SUFFIX,greasyfork.org
