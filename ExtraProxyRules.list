@@ -25,5 +25,7 @@ DOMAIN-SUFFIX,annas-archive.org
 DOMAIN-SUFFIX,r3sub.com
 # Reddit
 DOMAIN-SUFFIX,reddit.com
-# nextcloud应用商城
+# nextcloud 应用商城
 DOMAIN-KEYWORD,apps.nextcloud.com
+# Docker HUb 镜像仓库
+DOMAIN-KEYWORD,docker.io
