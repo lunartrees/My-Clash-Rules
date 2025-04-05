@@ -27,5 +27,3 @@ DOMAIN-SUFFIX,r3sub.com
 DOMAIN-SUFFIX,reddit.com
 # nextcloud 应用商城
 DOMAIN-KEYWORD,apps.nextcloud.com
-# CJK Font
-DOMAIN-SUFFIX,alpinelinux.org
