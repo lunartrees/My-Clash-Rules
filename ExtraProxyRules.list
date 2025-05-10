@@ -27,3 +27,5 @@ DOMAIN-SUFFIX,r3sub.com
 DOMAIN-SUFFIX,reddit.com
 # nextcloud 应用商城
 DOMAIN-KEYWORD,apps.nextcloud.com
+ # Python
+DOMAIN-SUFFIX,pythonhosted.org
