@@ -29,3 +29,5 @@ DOMAIN-SUFFIX,reddit.com
 DOMAIN-KEYWORD,apps.nextcloud.com
  # Python
 DOMAIN-SUFFIX,pythonhosted.org
+# FIX字幕侠
+DOMAIN-SUFFIX,zimuxia.cn
