@@ -33,3 +33,5 @@ DOMAIN-SUFFIX,pythonhosted.org
 DOMAIN-SUFFIX,zimuxia.cn
 # CloudDrive
 DOMAIN-SUFFIX,clouddrive2.com
+# debian 下载源
+DOMAIN-SUFFIX,debian.org
