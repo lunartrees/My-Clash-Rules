@@ -35,3 +35,5 @@ DOMAIN-SUFFIX,zimuxia.cn
 DOMAIN-SUFFIX,clouddrive2.com
 # debian 下载源
 DOMAIN-SUFFIX,debian.org
+# 维基百科
+DOMAIN-SUFFIX,wikipedia.org
