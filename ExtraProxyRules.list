@@ -43,4 +43,4 @@ DOMAIN-SUFFIX,wikipedia.org
 # Reddit
 DOMAIN-SUFFIX,reddit.com
 # postgresql
-DOMAIN-SUFFIX,postgresql.org
+DOMAIN-KEYWORD,postgresql.org
