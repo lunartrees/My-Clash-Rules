@@ -68,7 +68,7 @@ dns:
 # 没有再使用锚点，是考虑很多新手修改难度，这样新手修改某个分组更容易些。
 proxy-groups:
   - {name: 🚀 节点选择, type: select, proxies: [ 🔯 故障转移, ♻️ 自动选择, 🔯 香港故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 台湾故转, ♻️ 香港自动, ♻️ 日本自动, ♻️ 狮城自动, ♻️ 美国自动, ♻️ 台湾自动, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🇹🇼 台湾节点, 🌐 手动选择, 🎯 全球直连]}
-  - {name: ♻️ 自动选择, type: url-test, include-all-providers: true, tolerance: 20, interval: 300}
+  - {name: ♻️ 自动选择, type: url-test, include-all: true, tolerance: 20, interval: 300}
   - {name: 🔯 故障转移, type: fallback, include-all: true, tolerance: 20, interval: 300}
   - {name: 🌐 手动选择, type: select, include-all: true}
   - {name: 📹 油管视频, type: select, proxies: [🚀 节点选择, 🔯 故障转移, ♻️ 自动选择, 🔯 香港故转, 🔯 日本故转, 🔯 狮城故转, 🔯 美国故转, 🔯 台湾故转, ♻️ 香港自动, ♻️ 日本自动, ♻️ 狮城自动, ♻️ 美国自动, ♻️ 台湾自动, 🇭🇰 香港节点, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🇹🇼 台湾节点, 🌐 手动选择, 🎯 全球直连]}
