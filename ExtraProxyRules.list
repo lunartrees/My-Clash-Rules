@@ -11,7 +11,7 @@ DOMAIN-SUFFIX,deaderpool-mccc.com
 DOMAIN-KEYWORD,modthesims
 # ptt
 DOMAIN-SUFFIX,pttweb.cc
-# 七志宇
+# 七尺宇
 DOMAIN-SUFFIX,qichiyu.com
 # nodeseek
 DOMAIN-SUFFIX,nodeseek.com
@@ -44,3 +44,4 @@ DOMAIN-SUFFIX,wikipedia.org
 DOMAIN-SUFFIX,reddit.com
 # postgresql
 DOMAIN-KEYWORD,postgresql.org
+
