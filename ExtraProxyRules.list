@@ -44,4 +44,7 @@ DOMAIN-SUFFIX,wikipedia.org
 DOMAIN-SUFFIX,reddit.com
 # postgresql
 DOMAIN-KEYWORD,postgresql.org
+# U2
+DOMAIN-KEYWORD,u2.dmhy.org
+
 
