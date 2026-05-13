@@ -46,5 +46,6 @@ DOMAIN-SUFFIX,reddit.com
 DOMAIN-KEYWORD,postgresql.org
 # U2
 DOMAIN-KEYWORD,u2.dmhy.org
-
+# TIDB
+DOMAIN-SUFFIX,theintrodb.org
 
