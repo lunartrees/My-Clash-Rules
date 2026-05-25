@@ -48,4 +48,6 @@ DOMAIN-KEYWORD,postgresql.org
 DOMAIN-KEYWORD,u2.dmhy.org
 # TIDB
 DOMAIN-SUFFIX,theintrodb.org
+# Ultraland
+DOMAIN-KEYWORD,ultraland.app
 
