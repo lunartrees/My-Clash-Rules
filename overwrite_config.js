@@ -172,62 +172,53 @@ https://github.com/powerfullz/override-rules
     f = {
       香港: {
         weight: 10, // 权重最低，排在最前面
-        flag: "🇭🇰",
         pattern:
           "香港|港|\\b(?:HK|hk)(?:[-_ ]?\\d+(?:[-_ ]?[A-Za-z]{2,})?)?\\b|Hong Kong|HongKong|hongkong|HONG KONG|HONGKONG|深港|HKG|九龙|Kowloon|新界|沙田|荃湾|葵涌|🇭🇰",
         icon: `${t}/gh/Koolson/Qure@master/IconSet/Color/Hong_Kong.png`,
       },
       澳门: {
-        flag: "🇲🇴",
         pattern:
           "澳门|\\b(?:MO|mo)(?:[-_ ]?\\d+(?:[-_ ]?[A-Za-z]{2,})?)?\\b|Macau|🇲🇴",
         icon: `${t}/gh/Koolson/Qure@master/IconSet/Color/Macao.png`,
       },
       台湾: {
         weight: 20,
-        flag: "🇹🇼",
         pattern:
           "台|新北|彰化|\\b(?:TW|tw)(?:[-_ ]?\\d+(?:[-_ ]?[A-Za-z]{2,})?)?\\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇹🇼|🇼🇸",
         icon: `${t}/gh/Koolson/Qure@master/IconSet/Color/Taiwan.png`,
       },
       新加坡: {
         weight: 30,
-        flag: "🇸🇬",
         pattern:
           "新加坡|坡|狮城|\\b(?:SG|sg)(?:[-_ ]?\\d+(?:[-_ ]?[A-Za-z]{2,})?)?\\b|Singapore|SINGAPORE|SIN|🇸🇬",
         icon: `${t}/gh/Koolson/Qure@master/IconSet/Color/Singapore.png`,
       },
       日本: {
         weight: 40,
-        flag: "🇯🇵",
         pattern:
           "日本|川日|东京|大阪|泉日|埼玉|沪日|深日|\\b(?:JP|jp)(?:[-_ ]?\\d+(?:[-_ ]?[A-Za-z]{2,})?)?\\b|Japan|JAPAN|JPN|NRT|HND|KIX|TYO|OSA|关西|Kansai|KANSAI|🇯🇵",
         icon: `${t}/gh/Koolson/Qure@master/IconSet/Color/Japan.png`,
       },
       韩国: {
         weight: 45,
-        flag: "🇰🇷",
         pattern:
           "韩国|韩|韓|春川|Chuncheon|首尔|\\b(?:KR|kr)(?:[-_ ]?\\d+(?:[-_ ]?[A-Za-z]{2,})?)?\\b|Korea|KOREA|KOR|ICN|🇰🇷",
         icon: `${t}/gh/Koolson/Qure@master/IconSet/Color/Korea.png`,
       },
       美国: {
         weight: 50,
-        flag: "🇺🇸",
         pattern:
           "美国|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|纽约|亚特兰大|迈阿密|华盛顿|\\b(?:US|us)(?:[-_ ]?\\d+(?:[-_ ]?[A-Za-z]{2,})?)?\\b|United States|UnitedStates|UNITED STATES|USA|America|AMERICA|JFK|EWR|IAD|ATL|ORD|MIA|NYC|LAX|SFO|SEA|DFW|SJC|🇺🇸",
         icon: `${t}/gh/Koolson/Qure@master/IconSet/Color/United_States.png`,
       },
       加拿大: {
         weight: 55,
-        flag: "🇨🇦",
         pattern:
           "加拿大|渥太华|温哥华|卡尔加里|蒙特利尔|Montreal|\\b(?:CA|ca)(?:[-_ ]?\\d+(?:[-_ ]?[A-Za-z]{2,})?)?\\b|Canada|CANADA|CAN|YVR|YYZ|YUL|🇨🇦",
         icon: `${t}/gh/Koolson/Qure@master/IconSet/Color/Canada.png`,
       },
       英国: {
         weight: 60,
-        flag: "🇬🇧",
         pattern:
           "英国|伦敦|曼彻斯特|Manchester|\\b(?:UK|uk)(?:[-_ ]?\\d+(?:[-_ ]?[A-Za-z]{2,})?)?\\b|Britain|United Kingdom|UNITED KINGDOM|England|GBR|LHR|MAN|🇬🇧",
         icon: `${t}/gh/Koolson/Qure@master/IconSet/Color/United_Kingdom.png`,
@@ -240,74 +231,62 @@ https://github.com/powerfullz/override-rules
       },
       德国: {
         weight: 70,
-        flag: "🇩🇪",
         pattern:
           "德国|德|柏林|法兰克福|慕尼黑|Munich|\\b(?:DE|de)(?:[-_ ]?\\d+(?:[-_ ]?[A-Za-z]{2,})?)?\\b|Germany|GERMANY|DEU|MUC|🇩🇪",
         icon: `${t}/gh/Koolson/Qure@master/IconSet/Color/Germany.png`,
       },
       法国: {
         weight: 80,
-        flag: "🇫🇷",
         pattern:
           "法国|法|巴黎|马赛|Marseille|\\b(?:FR|fr)(?:[-_ ]?\\d+(?:[-_ ]?[A-Za-z]{2,})?)?\\b|France|FRANCE|FRA|CDG|MRS|🇫🇷",
         icon: `${t}/gh/Koolson/Qure@master/IconSet/Color/France.png`,
       },
       俄罗斯: {
-        flag: "🇷🇺",
         pattern:
           "俄罗斯|俄|\\b(?:RU|ru)(?:[-_ ]?\\d+(?:[-_ ]?[A-Za-z]{2,})?)?\\b|Russia|🇷🇺",
         icon: `${t}/gh/Koolson/Qure@master/IconSet/Color/Russia.png`,
       },
       泰国: {
-        flag: "🇹🇭",
         pattern:
           "泰国|泰|\\b(?:TH|th)(?:[-_ ]?\\d+(?:[-_ ]?[A-Za-z]{2,})?)?\\b|Thailand|🇹🇭",
         icon: `${t}/gh/Koolson/Qure@master/IconSet/Color/Thailand.png`,
       },
       印度: {
-        flag: "🇮🇳",
         pattern:
           "印度|\\b(?:IN|in)(?:[-_ ]?\\d+(?:[-_ ]?[A-Za-z]{2,})?)?\\b|India|🇮🇳",
         icon: `${t}/gh/Koolson/Qure@master/IconSet/Color/India.png`,
       },
       马来西亚: {
-        flag: "🇲🇾",
         pattern:
           "马来西亚|马来|\\b(?:MY|my)(?:[-_ ]?\\d+(?:[-_ ]?[A-Za-z]{2,})?)?\\b|Malaysia|🇲🇾",
         icon: `${t}/gh/Koolson/Qure@master/IconSet/Color/Malaysia.png`,
       },
       阿根廷: {
-        flag: "🇦🇷",
         pattern:
           "阿根廷|布宜诺斯艾利斯|\\b(?:AR|ar)(?:[-_ ]?\\d+(?:[-_ ]?[A-Za-z]{2,})?)?\\b|Argentina|EZE|🇦🇷",
         icon: `${t}/gh/Koolson/Qure@master/IconSet/Color/Argentina.png`,
       },
       芬兰: {
-        flag: "🇫🇮",
         pattern:
           "芬兰|赫尔辛基|\\b(?:FI|fi)(?:[-_ ]?\\d+(?:[-_ ]?[A-Za-z]{2,})?)?\\b|Finland|HEL|🇫🇮",
         icon: `${t}/gh/Koolson/Qure@master/IconSet/Color/Finland.png`,
       },
       埃及: {
-        flag: "🇪🇬",
         pattern:
           "埃及|开罗|\\b(?:EG|eg)(?:[-_ ]?\\d+(?:[-_ ]?[A-Za-z]{2,})?)?\\b|Egypt|CAI|🇪🇬",
         icon: `${t}/gh/Koolson/Qure@master/IconSet/Color/Egypt.png`,
       },
       菲律宾: {
-        flag: "🇵🇭",
         pattern:
           "菲律宾|马尼拉|\\b(?:PH|ph)(?:[-_ ]?\\d+(?:[-_ ]?[A-Za-z]{2,})?)?\\b|Philippines|MNL|🇵🇭",
         icon: `${t}/gh/Koolson/Qure@master/IconSet/Color/Philippines.png`,
       },
       土耳其: {
-        flag: "🇹🇷",
         pattern:
           "土耳其|伊斯坦布尔|\\b(?:TR|tr)(?:[-_ ]?\\d+(?:[-_ ]?[A-Za-z]{2,})?)?\\b|Turkey|Türkiye|IST|🇹🇷",
         icon: `${t}/gh/Koolson/Qure@master/IconSet/Color/Turkey.png`,
       },
       乌克兰: {
-        flag: "🇺🇦",
         pattern:
           "乌克兰|基辅|\\b(?:UA|ua)(?:[-_ ]?\\d+(?:[-_ ]?[A-Za-z]{2,})?)?\\b|Ukraine|KBP|🇺🇦",
         icon: `${t}/gh/Koolson/Qure@master/IconSet/Color/Ukraine.png`,
@@ -464,8 +443,7 @@ https://github.com/powerfullz/override-rules
     for (let s of o) {
       let u = f[s];
       if (!u) continue; // 跳过未配置的地区
-      // 生成带 flag emoji 的代理组名称，如 "🇭🇰香港节点"
-      let d = (u.flag || "") + s + y;
+      let d = `${s}${y}`; // 生成代理组名称，如 "香港节点"
       let m = u.icon;
       // 根据 regexFilter 模式选择不同的节点来源配置
       let I = i
@@ -651,7 +629,7 @@ https://github.com/powerfullz/override-rules
         icon: `${t}/gh/Koolson/Qure@master/IconSet/Color/bilibili.png`,
         type: "select",
         proxies: hasTW && hasHK
-          ? ["DIRECT", (f["台湾"]?.flag || "") + "台湾节点", (f["香港"]?.flag || "") + "香港节点"]
+          ? ["DIRECT", "台湾节点", "香港节点"]
           : u,
       },
       // 巴哈姆特
@@ -660,7 +638,7 @@ https://github.com/powerfullz/override-rules
         icon: `${t}/gh/Koolson/Qure@master/IconSet/Color/Bahamut.png`,
         type: "select",
         proxies: hasTW
-          ? [(f["台湾"]?.flag || "") + "台湾节点", e.SELECT, e.MANUAL, "DIRECT"]
+          ? ["台湾节点", e.SELECT, e.MANUAL, "DIRECT"]
           : s,
       },
       // Youtube
@@ -725,7 +703,7 @@ https://github.com/powerfullz/override-rules
         icon: `${t}/gh/powerfullz/override-rules@master/icons/Truth_Social.png`,
         type: "select",
         proxies: hasUS
-          ? [(f["美国"]?.flag || "") + "美国节点", e.SELECT, e.MANUAL]
+          ? ["美国节点", e.SELECT, e.MANUAL]
           : s,
       },
       // PikPak网盘
@@ -898,11 +876,7 @@ https://github.com/powerfullz/override-rules
         let p = f[l.country]?.weight ?? Infinity;
         return a - p;
       })
-      .map((i) => {
-        let cfg = f[i.country];
-        // 生成带 flag emoji 的地区组名，如 "🇭🇰香港节点"
-        return (cfg?.flag || "") + i.country + y;
-      });
+      .map((i) => i.country + y); // 添加"节点"后缀
   }
 
   /**
