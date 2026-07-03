@@ -41,7 +41,7 @@ DOMAIN-SUFFIX,yfsp.tv
 DOMAIN-SUFFIX,wikimedia.org
 DOMAIN-SUFFIX,wikipedia.org
 # Reddit
-DOMAIN-SUFFIX,reddit.com
+reddit.com
 # postgresql
 DOMAIN-KEYWORD,postgresql.org
 # U2
@@ -50,4 +50,5 @@ DOMAIN-KEYWORD,u2.dmhy.org
 DOMAIN-SUFFIX,theintrodb.org
 # Ultraland
 DOMAIN-KEYWORD,ultraland.app
-
+# Murkodu
+DOMAIN-SUFFIX,murdoku.com
