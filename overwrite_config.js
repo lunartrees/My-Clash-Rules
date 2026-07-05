@@ -3,7 +3,7 @@ powerfullz 的 Substore 订阅转换脚本
 https://github.com/powerfullz/override-rules
 
 支持的传入参数：
-- grouptype: 地区代理组类型（0=select 手动选择, 1=url-test 自动测速, 2=load-balance 负载均衡，默认 0）
+- grouptype: 地区代理组类型（0=select 手动选择, 1=url-test 自动测速, 2=load-balance 负载均衡，默认 1）
   - 向后兼容：若未传 grouptype 但传了 loadbalance，则 loadbalance=true 映射为 grouptype=2，loadbalance=false 映射为 grouptype=1
 - landing: 启用落地节点功能（如机场家宽/星链/落地分组，默认 false）
 - ipv6: 启用 IPv6 支持（默认 false）
@@ -309,13 +309,13 @@ https://github.com/powerfullz/override-rules
    * - 如果传了 loadbalance=true，则 groupType=2（负载均衡）
    * - 如果传了 loadbalance=false，则 groupType=1（自动测速）
    * - 如果传了 grouptype，则优先使用 grouptype 的值
-   * - 默认值为 0（手动选择）
+   * - 默认值为 1（自动测速）
    * @param {Object} o - 参数对象
    * @returns {number} 0=select, 1=url-test, 2=load-balance
    */
   function ie(o) {
     // 先根据 loadbalance 参数确定默认值
-    let r = o.loadbalance !== undefined ? (g(o.loadbalance) ? 2 : 1) : 0;
+    let r = o.loadbalance !== undefined ? (g(o.loadbalance) ? 2 : 1) : 1;
     // 如果传了 grouptype 则覆盖默认值，否则使用上面计算的值
     let n = x(o.grouptype, r);
     // 只允许 0/1/2 三个合法值
@@ -423,11 +423,13 @@ https://github.com/powerfullz/override-rules
    * 1. regexFilter=true: 使用 include-all + filter 正则匹配（动态匹配，适用于节点列表会变化的情况）
    * 2. regexFilter=false: 直接枚举节点名称（静态匹配，性能更好）
    * 
+   * 地区代理组的类型由传入的 groupType 参数控制（默认 1=自动测速），
+   * 可通过 grouptype 参数统一修改所有地区代理组的类型。
    * 如果启用了 landing 模式，地区代理组会排除落地节点（通过 exclude-filter）
    * @param {Object} param0
    * @param {string[]} param0.countries - 国家/地区列表（已按权重排序）
    * @param {boolean} param0.landing - 是否启用落地模式
-   * @param {number} param0.groupType - 组类型
+   * @param {number} param0.groupType - 组类型（0=select, 1=url-test, 2=load-balance，默认 1）
    * @param {boolean} param0.regexFilter - 是否使用正则过滤
    * @param {Array} param0.countryInfo - 国家节点信息 [{country, nodes}]
    * @returns {Object[]} 代理组配置数组
@@ -468,13 +470,14 @@ https://github.com/powerfullz/override-rules
    * 这是整个配置的核心函数，生成完整的 proxy-groups 列表。
    * 包含以下类型的代理组（按顺序）：
    * 1. 选择代理 - 全局入口组
-   * 2. 自动选择/故障转移 - 自动切换组
-   * 3. 手动选择 - 包含所有节点的全量选择组
-   * 4. 前置代理 - 可选，用于前置代理场景
-   * 5. 落地节点 - 可选，用于家宽/星链等落地节点
-   * 6. 各类服务分组 - 如 AI、流媒体、社交等
-   * 7. 低倍率节点 - 可选，低流量消耗节点
-   * 8. 地区代理组 - 按国家/地区划分
+   * 2. 自动选择 - 包含所有节点，按原始顺序排列，自动测速
+   * 3. 故障转移 - 自动切换组
+   * 4. 手动选择 - 包含所有节点的全量选择组
+   * 5. 前置代理 - 可选，用于前置代理场景
+   * 6. 落地节点 - 可选，用于家宽/星链等落地节点
+   * 7. 各类服务分组 - 如 AI、流媒体、社交等
+   * 8. 低倍率节点 - 可选，低流量消耗节点
+   * 9. 地区代理组 - 按国家/地区划分（默认自动测速，可通过 grouptype 参数修改）
    * 
    * 特殊逻辑：
    * - Bilibili：同时有台湾和香港节点时，使用 DIRECT + 台湾/香港节点
@@ -511,13 +514,13 @@ https://github.com/powerfullz/override-rules
         type: "select",
         proxies: d,
       },
-      // 自动选择
+      // 自动选择（包含所有节点，按原始顺序排列）
       {
         name: e.AUTO,
         icon: `${t}/gh/Koolson/Qure@master/IconSet/Color/Auto.png`,
         type: "url-test",
         url: "https://cp.cloudflare.com/generate_204",
-        proxies: m,
+        proxies: b,
         interval: 60,
         tolerance: 20,
       },
@@ -1373,9 +1376,11 @@ https://github.com/powerfullz/override-rules
    * 为不同场景生成默认的代理选择列表：
    * - defaultProxies: 普通服务的默认代理（如流媒体、社交等）
    * - defaultProxiesDirect: 国内服务的默认代理（优先 DIRECT）
-   * - defaultSelector: 自动选择/故障转移的候选列表
-   * - defaultFallback: 故障转移的候选列表
+   * - defaultSelector: 选择代理的候选列表（包含 AUTO、FALLBACK、地区组等）
+   * - defaultFallback: 故障转移的候选列表（仅包含落地节点组和地区组）
    * - frontProxySelector: 前置代理的候选列表
+   * 
+   * 注意：自动选择（AUTO）组现在直接包含所有节点（按原始顺序），不再使用 defaultSelector。
    * 
    * 列表构建逻辑：
    * - 如果启用了 landing，加入落地节点组
