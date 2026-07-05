@@ -51,4 +51,6 @@ DOMAIN-SUFFIX,theintrodb.org
 # Ultraland
 DOMAIN-KEYWORD,ultraland.app
 # openwrt
-openwrt.org
+DOMAIN-SUFFIX,openwrt.org
+# flathub
+DOMAIN-SUFFIX,flathub.org
