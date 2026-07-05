@@ -40,8 +40,6 @@ DOMAIN-SUFFIX,yfsp.tv
 # 维基百科
 DOMAIN-SUFFIX,wikimedia.org
 DOMAIN-SUFFIX,wikipedia.org
-# Reddit
-reddit.com
 # postgresql
 DOMAIN-KEYWORD,postgresql.org
 # U2
