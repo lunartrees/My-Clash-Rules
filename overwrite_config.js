@@ -960,8 +960,7 @@ https://github.com/powerfullz/override-rules
       // 私有网络
       "GEOIP,private,DIRECT,no-resolve",
       // 广告拦截
-      `RULE-SET,ADBlock,${e.AD_BLOCK}`,
-      `RULE-SET,AdditionalFilter,${e.AD_BLOCK}`,
+      `RULE-SET,AWA-Ads,${e.AD_BLOCK}`,
       // 特殊域名
       `DOMAIN-SUFFIX,truthsocial.com,${e.TRUTH_SOCIAL}`,
       // 静态资源/CDN
@@ -1024,13 +1023,13 @@ https://github.com/powerfullz/override-rules
     "use strict";
     C();
     W = {
-      ADBlock: {
+      "AWA-Ads": {
         type: "http",
         behavior: "domain",
         format: "yaml",
         interval: 86400,
-        url: `${t}/gh/217heidai/adblockfilters@main/rules/adblockmihomolite.yaml`,
-        path: "./ruleset/ADBlock.yaml",
+        url: "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Clash.yaml",
+        path: "./ruleset/AWA-Ads.yaml",
       },
       StaticResources: {
         type: "http",
@@ -1071,14 +1070,6 @@ https://github.com/powerfullz/override-rules
         interval: 86400,
         url: `${t}/gh/powerfullz/override-rules@master/ruleset/FirebaseCloudMessaging.list`,
         path: "./ruleset/FirebaseCloudMessaging.list",
-      },
-      AdditionalFilter: {
-        type: "http",
-        behavior: "classical",
-        format: "text",
-        interval: 86400,
-        url: `${t}/gh/powerfullz/override-rules@master/ruleset/AdditionalFilter.list`,
-        path: "./ruleset/AdditionalFilter.list",
       },
       AdditionalCDNResources: {
         type: "http",
