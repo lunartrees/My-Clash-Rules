@@ -52,3 +52,5 @@ DOMAIN-KEYWORD,ultraland.app
 DOMAIN-SUFFIX,openwrt.org
 # flathub
 DOMAIN-KEYWORD,flathub
+# rsload
+DOMAIN-SUFFIX,rsload.net
