@@ -1524,8 +1524,11 @@ https://github.com/powerfullz/override-rules
         regexFilter: N,
         countryInfo: r,
       });
-      // 提取原始节点名称列表（保持原始顺序）
-      let allNodeNames = (o.proxies || []).map((ne) => ne.name).filter(Boolean);
+      // 提取原始节点名称列表（保持原始顺序），排除名字为"dns"的节点
+      let allNodeNames = (o.proxies || [])
+        .map((ne) => ne.name)
+        .filter(Boolean)
+        .filter((name) => name.toLowerCase() !== "dns");
       let h = v({
         landing: A,
         regexFilter: N,
