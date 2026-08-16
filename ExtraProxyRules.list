@@ -54,3 +54,5 @@ DOMAIN-SUFFIX,openwrt.org
 DOMAIN-KEYWORD,flathub
 # rsload
 DOMAIN-SUFFIX,rsload.net
+# mkvtoolnix
+DOMAIN-SUFFIX,mkvtoolnix
