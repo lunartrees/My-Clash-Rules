@@ -55,4 +55,6 @@ DOMAIN-KEYWORD,flathub
 # rsload
 DOMAIN-SUFFIX,rsload.net
 # mkvtoolnix
-DOMAIN-SUFFIX,mkvtoolnix
+DOMAIN-KEYWORD,mkvtoolnix
+# LibreOffice
+DOMAIN-SUFFIX,documentfoundation.org
